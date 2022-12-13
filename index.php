@@ -9,16 +9,17 @@
 <body>
     <?php
         $word = $_GET['badWord'];
-    ?>
-    <h1>This is the bad word: <?php echo $word; ?></h1>
-    <p>Tre Anelli ai Re degli Elfi sotto il cielo, 
+        $text = "Tre Anelli ai Re degli Elfi sotto il cielo, 
         <br> Sette ai Principi dei Nani nell'aule di pietra, 
         <br> Nove agli Uomini Mortali dal fato crudele, 
         <br> Uno al Nero Sire sul suo trono tetro 
         <br> Nella Terra di Mordor dove le Ombre si celano.
         <br> Un Anello per trovarli, Uno per vincerli, 
         <br> Uno per radunarli e al buio avvincerli 
-        <br> Nela Terra di Mordor dove le Ombre si celano.</p>
+        <br> Nela Terra di Mordor dove le Ombre si celano.";
+    ?>
+    <h1>This is the bad word: <?php echo $word; ?></h1>
+    <p><?php echo $text ?></p>
 
     <form action="" method="get">
         <label for="selectBadWord">Write the word you would like to censor:</label>
