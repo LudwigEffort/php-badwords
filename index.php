@@ -8,8 +8,14 @@
 </head>
 <body>
     <?php
-        $message = "Hello everyone from php";
+        $word = $_GET['badWord'];
     ?>
-    <h1><?php echo $message; ?></h1>
+    <h1>This is the bad word: <?php echo $word; ?></h1>
+
+    <form action="" method="get">
+        <label for="selectBadWord">Write the word you would like to censor:</label>
+        <input type="text" name="badWord" id="selectBadWord">
+        <button>Select!</button>
+    </form>
 </body>
 </html>
