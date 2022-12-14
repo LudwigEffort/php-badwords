@@ -17,6 +17,7 @@
         <br> Un Anello per trovarli, Uno per vincerli, 
         <br> Uno per radunarli e al buio avvincerli 
         <br> Nela Terra di Mordor dove le Ombre si celano.";
+        $censoredText = str_ireplace("$word", "***", "$text");
     ?>
     <h1>This is the bad word: <?php echo $word; ?></h1>
     <p><?php echo $text ?></p>
@@ -26,5 +27,7 @@
         <input type="text" name="badWord" id="selectBadWord">
         <button>Select!</button>
     </form>
+    <h1>This is the censored text:</h1>
+    <p><?php echo $censoredText ?></p>
 </body>
 </html>
